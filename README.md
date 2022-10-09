@@ -1,3 +1,26 @@
+# Scrolling-Form
+
+- coded by Wojciech Bylica
+- 9.10.2022
+
+## Demo:
+
+https://wojciechbylica.github.io/scrolling-form/
+
+## technology:
+
+- Type script
+- react
+- formik
+- yup
+
+## Description
+
+This form:
+
+- can scroll the screen to the field which has validation error
+- has animated images in inputs, which stop and get red on validation error
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
