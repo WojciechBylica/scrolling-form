@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/scrolling-form/static/css/main.0404c07f.css",
+    "main.css": "/scrolling-form/static/css/main.2a9e607d.css",
     "main.js": "/scrolling-form/static/js/main.add0e2fa.js",
     "static/js/787.48779df4.chunk.js": "/scrolling-form/static/js/787.48779df4.chunk.js",
     "index.html": "/scrolling-form/index.html",
-    "main.0404c07f.css.map": "/scrolling-form/static/css/main.0404c07f.css.map",
+    "main.2a9e607d.css.map": "/scrolling-form/static/css/main.2a9e607d.css.map",
     "main.add0e2fa.js.map": "/scrolling-form/static/js/main.add0e2fa.js.map",
     "787.48779df4.chunk.js.map": "/scrolling-form/static/js/787.48779df4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0404c07f.css",
+    "static/css/main.2a9e607d.css",
     "static/js/main.add0e2fa.js"
   ]
 }
