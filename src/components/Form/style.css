@@ -7,29 +7,36 @@
     margin: 8px;
 }
 
-.form-box {
+.form-inputBox {
+    flex-grow: 1;
+    position: relative;
+
+}
+
+.form-label {
     display: flex;
     padding: 20px;
     min-height: 60px;
 }
 
-.form-inputBox {
-    flex-grow: 1;
-    position: relative;
+@media (max-width: 600px) {
+    .form-label {
+        flex-direction: column;
+    }
 }
 
-.form-label {
-    padding-top: 8px;
+.form-paragraph {
     flex-basis: 25%;
+    margin: 8px 0 0;
 }
 
 .form-input {
     width: 100%;
-    padding: 8px 0;
+    padding: 8px;
     background-color: white;
     border: 1px solid gray;
+    font-size: 14px;
 }
-
 
 @keyframes rotate {
     0% {

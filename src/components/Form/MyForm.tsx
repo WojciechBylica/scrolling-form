@@ -36,13 +36,11 @@ export const MyForm = () => {
   );
 
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className="form" name="myForm">
       <ScrollToError clue="form-error" isSubmitting={isSubmitting} />
 
-      <div className="form-box">
-        <label htmlFor="firstName" className="form-label">
-          First Name
-        </label>
+      <label htmlFor="firstName" className="form-label">
+        <p className="form-paragraph">First Name</p>
         <div className="form-inputBox">
           <StatusVisualiser
             fieldName={!!touched.firstName && !!errors.firstName}
@@ -63,11 +61,10 @@ export const MyForm = () => {
             <div className="form-error">{errors.firstName}</div>
           )}
         </div>
-      </div>
-      <div className="form-box">
-        <label htmlFor="lastName" className="form-label">
-          Last Name
-        </label>
+      </label>
+
+      <label htmlFor="lastName" className="form-label">
+        <p className="form-paragraph">First Name</p>
         <div className="form-inputBox">
           <StatusVisualiser
             fieldName={!!touched.lastName && !!errors.lastName}
@@ -82,34 +79,36 @@ export const MyForm = () => {
             }}
             onChange={handleChange}
             value={values.lastName}
+            autoComplete="off"
           />
           {errors.lastName && touched.lastName && (
             <div className="form-error">{errors.lastName}</div>
           )}
         </div>
-      </div>
-      <div className="form-box">
-        <label htmlFor="email" className="form-label">
-          Email Address
-        </label>
+      </label>
+
+      <label htmlFor="email" className="form-label">
+        <p className="form-paragraph">Email Address</p>
         <div className="form-inputBox">
           <StatusVisualiser fieldName={!!touched.email && !!errors.email} />
           <input
             id="email"
             name="email"
-            type="email"
+            type="text"
             className="form-input"
             onBlur={({ target }) => {
               setFieldValue('email', target.value.trim());
             }}
             onChange={handleChange}
             value={values.email}
+            autoComplete="off"
           />
           {errors.email && touched.email && (
             <div className="form-error">{errors.email}</div>
           )}
         </div>
-      </div>
+      </label>
+
       <button type="submit" className="form-button">
         Submit
       </button>
