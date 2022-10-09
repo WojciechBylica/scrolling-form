@@ -64,7 +64,7 @@ export const MyForm = () => {
       </label>
 
       <label htmlFor="lastName" className="form-label">
-        <p className="form-paragraph">First Name</p>
+        <p className="form-paragraph">Last Name</p>
         <div className="form-inputBox">
           <StatusVisualiser
             fieldName={!!touched.lastName && !!errors.lastName}
