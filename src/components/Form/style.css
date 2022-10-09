@@ -15,6 +15,7 @@
 
 .form-inputBox {
     flex-grow: 1;
+    position: relative;
 }
 
 .form-label {
@@ -46,7 +47,7 @@
 
 .form-loader {
     position: absolute;
-    right: 30px;
+    right: 0;
     margin: 7px;
     animation: rotate 2s infinite;
 
