@@ -6,7 +6,7 @@ export const MyInput = ({
   name,
   label
 }: {
-  name: 'firstName' | 'lastName' | 'email';
+  name: keyof FormValues;
   label: string;
 }) => {
   const { values, handleChange, errors, touched, setFieldValue } =
